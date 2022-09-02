@@ -1,19 +1,19 @@
 import 'package:dio/dio.dart';
-import 'package:formation_flutter_posts_app/posts/data/models/post_model.dart';
+import 'package:formation_flutter_posts_app/post_app_with_provider/data/models/post_model2.dart';
 import 'package:formation_flutter_posts_app/shared/utiles/utile.dart';
 
-class PostServices {
+class PostRepository {
   Dio dio = Dio(
     BaseOptions(baseUrl: baseUrl),
   );
-  Future<List<PostModel>> getAllPost() async {
+  Future<List<PostModel2>> getAllPost() async {
     Response response = await dio.get('/posts');
     print(response.data);
 
-    List<PostModel> posts = [];
+    List<PostModel2> posts = [];
 
     for (var jsonPost in response.data) {
-      PostModel post = PostModel.fromJson(jsonPost);
+      PostModel2 post = PostModel2.fromJson(jsonPost);
       posts.add(post);
     }
 

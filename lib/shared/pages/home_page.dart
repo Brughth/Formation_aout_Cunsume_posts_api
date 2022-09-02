@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:formation_flutter_posts_app/comments/presentations/comment_page.dart';
-import 'package:formation_flutter_posts_app/posts/data/models/post_model.dart';
-import 'package:formation_flutter_posts_app/posts/services/posts_services.dart';
+import 'package:formation_flutter_posts_app/post_app_without_provider/comments/presentations/comment_page.dart';
+import 'package:formation_flutter_posts_app/post_app_without_provider/posts/data/models/post_model.dart';
+import 'package:formation_flutter_posts_app/post_app_without_provider/posts/services/posts_services.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);

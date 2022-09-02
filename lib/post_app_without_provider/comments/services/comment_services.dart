@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:formation_flutter_posts_app/comments/data/models/comment_model.dart';
+import 'package:formation_flutter_posts_app/post_app_without_provider/comments/data/models/comment_model.dart';
 import 'package:formation_flutter_posts_app/shared/utiles/utile.dart';
 
 class CommentServices {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:formation_flutter_posts_app/comments/data/models/comment_model.dart';
-import 'package:formation_flutter_posts_app/comments/services/comment_services.dart';
-import 'package:formation_flutter_posts_app/posts/data/models/post_model.dart';
+import 'package:formation_flutter_posts_app/post_app_without_provider/comments/data/models/comment_model.dart';
+import 'package:formation_flutter_posts_app/post_app_without_provider/comments/services/comment_services.dart';
+import 'package:formation_flutter_posts_app/post_app_without_provider/posts/data/models/post_model.dart';
 
 class CommentPage extends StatefulWidget {
   CommentPage({
