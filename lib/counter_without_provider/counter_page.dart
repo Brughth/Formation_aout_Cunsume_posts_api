@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:formation_flutter_posts_app/counter_with_provider/logic/counter_provider.dart';
+import 'package:formation_flutter_posts_app/shared/service_locator.dart';
 import 'package:provider/provider.dart';
 
 class CounterPage extends StatefulWidget {
@@ -14,10 +15,11 @@ class _CounterPageState extends State<CounterPage> {
   int _count = 1;
   @override
   Widget build(BuildContext context) {
+    String count = getIt<CounterProvider>().getcount.toString();
     return Scaffold(
       drawer: Container(),
       appBar: AppBar(
-        title: const Text("Counter App"),
+        title: Text("Counter App $count"),
       ),
       body: Center(
         child: Column(

@@ -1,16 +1,19 @@
 import 'package:flutter/cupertino.dart';
 
 class CounterProvider extends ChangeNotifier {
-  int _count = 0;
-  int get count => _count;
+  int count;
+  CounterProvider({
+    required this.count,
+  });
+  int get getcount => count;
 
   increment() {
-    _count++;
+    count++;
     notifyListeners();
   }
 
   decrement() {
-    _count--;
+    count--;
     notifyListeners();
   }
 }

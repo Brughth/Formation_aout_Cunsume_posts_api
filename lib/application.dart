@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:formation_flutter_posts_app/counter_with_provider/presentation/counter_page_with_provider.dart';
 import 'package:formation_flutter_posts_app/counter_without_provider/counter_page.dart';
+import 'package:formation_flutter_posts_app/genderize/presentation/gender_page.dart';
 import 'package:formation_flutter_posts_app/post_app_with_provider/presentation/post_app_with_provider.dart';
 import 'package:formation_flutter_posts_app/shared/pages/home_page.dart';
 
@@ -58,6 +59,18 @@ class Application extends StatelessWidget {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) => const PostAppWithProvider(),
+                  ),
+                );
+              },
+            ),
+          ),
+          Card(
+            child: ListTile(
+              title: const Text("Gender App With Provider"),
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => GenderPage(),
                   ),
                 );
               },
